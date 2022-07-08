@@ -1,0 +1,212 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	background-color: #e4c59cb4;
+	color: rgb(248, 246, 246);
+	font-family: "Outfit-VariableFont_wght";
+}
+
+/* ------------------ */
+@font-face {
+	font-family: "Outfit-VariableFont_wght";
+	src: url("../fonts/Outfit-VariableFont_wght.eot");
+	src: local("☺"), url("../fonts/Outfit-VariableFont_wght.woff") format("woff"),
+		url("../fonts/Outfit-VariableFont_wght.ttf") format("truetype"),
+		url("../fonts/Outfit-VariableFont_wght.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "BebasNeue-Regular";
+	src: url("../fonts/BebasNeue-Regular.eot");
+	src: local("☺"), url("../fonts/BebasNeue-Regular.woff") format("woff"),
+		url("../fonts/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/BebasNeue-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+/* ------------------ */
+.wrapper {
+	min-height: 100%;
+}
+.parallax__title {
+	font-family: "BebasNeue-Regular";
+	font-size: 72px;
+	color: rgb(32, 32, 32);
+}
+.parallax {
+	min-height: 100vh;
+}
+.parallax__body {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.parallax__container {
+	text-transform: uppercase;
+	position: relative;
+	z-index: 20;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+.parallax__label {
+	color: rgb(255, 255, 255);
+	display: flex;
+	font-size: 18px;
+	font-weight: 800;
+	margin: 0px 0px 30px 0px;
+	align-items: center;
+}
+.parallax__label::before {
+	content: "";
+	flex: 0 0 70px;
+	margin: 0px 30px 0px 0px;
+	background-color: rgb(255, 255, 255);
+	height: 1px;
+}
+
+.parallax__images {
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	top: -10%;
+	left: -10%;
+	z-index: 1;
+}
+// .images-parallax {
+// }
+.images-parallax__item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.images-parallax__background,
+.images-parallax__clouds1,
+.images-parallax__clouds2,
+.images-parallax__mountain-green,
+.images-parallax__mountain-yellow,
+.images-parallax__landscape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+@media (max-width: 767px) {
+	.images-parallax__background {
+		background: url("../img/back.png") top / cover no-repeat;
+	}
+	.images-parallax__clouds1 {
+		background: url("../img/1.png") 20% 20% / 15% no-repeat;
+	}
+	.images-parallax__clouds2 {
+		background: url("../img/3.png") 80% 25% / 35% no-repeat;
+	}
+	.images-parallax__mountain-green {
+		background: url("../img/mountain_green.png") 0% 85% / 80% no-repeat;
+	}
+	.images-parallax__mountain-yellow {
+		background: url("../img/mountain_yellow.png") 190% 85% / 80% no-repeat;
+	}
+	.images-parallax__landscape {
+		background: url("../img/2.png") 0% 89% / 100% no-repeat;
+	}
+}
+@media (min-width: 767px) {
+	.images-parallax__background {
+		background: url("../img/back.png") top / cover no-repeat;
+	}
+	.images-parallax__clouds1 {
+		background: url("../img/1.png") 20% 20% / 15% no-repeat;
+	}
+	.images-parallax__clouds2 {
+		background: url("../img/3.png") 80% 25% / 35% no-repeat;
+	}
+	.images-parallax__mountain-green {
+		background: url("../img/mountain_green.png") 0% 79% / 56% no-repeat;
+	}
+	.images-parallax__mountain-yellow {
+		background: url("../img/mountain_yellow.png") 240% 78% / 85% no-repeat;
+	}
+	.images-parallax__landscape {
+		background: url("../img/2.png") 0% 89% / 100% no-repeat;
+	}
+}
+.content {
+	background-color: rgb(32, 32, 32);
+	position: relative;
+	z-index: 2;
+}
+.content::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 200px;
+	width: 100%;
+	transform: translate(0px, -100%);
+	background: linear-gradient(180deg, rgba(32, 32, 32, 0) 5%, rgba(32, 32, 32, 100) 100%);
+}
+// .content__container {
+// }
+.content__title {
+	font-family: "BebasNeue-Regular";
+	font-size: 48px;
+	margin: 0px 0px 36px 0px;
+}
+.content__text {
+	font-size: 20px;
+	line-height: 1.5;
+}
+.content__text p {
+	margin: 0px 0px 20px 0px;
+}
+.content__text p:last-child {
+	margin: 0px 0px 0px 0px;
+}
+.footer {
+}
+.footer__container {
+	align-items: center;
+	display: flex;
+	min-height: 70px;
+	justify-content: space-between;
+}
+.autor {
+}
+.data {
+}
