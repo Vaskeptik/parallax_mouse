@@ -13,7 +13,8 @@ window.onload = function () {
 
 		// Коэффициенты
 		const forClouds = 40;
-		const forMountains = 20;
+		const forMountainsY = 25;
+		const forMountainsG = 20;
 		const forlandscape = 10;
 
 		// Скорость анимации
@@ -33,8 +34,8 @@ window.onload = function () {
 			// Передаем стили
 			clouds1.style.cssText = `transform: translate(${positionX / forClouds}%,${positionY / forClouds}%);`;
 			clouds2.style.cssText = `transform: translate(${positionX / forClouds}%,${positionY / forClouds}%);`;
-			mountainGreen.style.cssText = `transform: translate(${positionX / forMountains}%,${positionY / forMountains}%);`;
-			mountainYellow.style.cssText = `transform: translate(${positionX / forMountains}%,${positionY / forMountains}%);`;
+			mountainGreen.style.cssText = `transform: translate(${positionX / forMountainsG}%,${positionY / forMountainsG}%);`;
+			mountainYellow.style.cssText = `transform: translate(${positionX / forMountainsY}%,${positionY / forMountainsY}%);`;
 			landscape.style.cssText = `transform: translate(${positionX / forlandscape}%,${positionY / forlandscape}%);`;
 
 			requestAnimationFrame(setMouseParallaxStyle);
@@ -72,13 +73,11 @@ window.onload = function () {
 		observer.observe(document.querySelector('.content'));
 
 		function setParallaxItemsStyle(scrollTopProcent) {
-			content.style.cssText = `transform: translate(0%,-${scrollTopProcent / 9}%);`;
-			mountainGreen.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 6}%);`;
+			content.style.cssText = `transform: translate(0%,-${scrollTopProcent / 6}%);`;
+			mountainGreen.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 9}%);`;
 			mountainYellow.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 6}%);`;
 			landscape.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3}%);`;
 		}
-
-
 	}
 }
 

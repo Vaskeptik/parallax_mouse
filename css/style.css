@@ -141,23 +141,18 @@ body {
   .images-parallax__background {
     background: url("../img/back.png") top/cover no-repeat;
   }
-
   .images-parallax__clouds1 {
     background: url("../img/1.png") 20% 20%/15% no-repeat;
   }
-
   .images-parallax__clouds2 {
     background: url("../img/3.png") 80% 25%/35% no-repeat;
   }
-
   .images-parallax__mountain-green {
     background: url("../img/mountain_green.png") 0% 85%/80% no-repeat;
   }
-
   .images-parallax__mountain-yellow {
     background: url("../img/mountain_yellow.png") 190% 85%/80% no-repeat;
   }
-
   .images-parallax__landscape {
     background: url("../img/2.png") 0% 89%/100% no-repeat;
   }
@@ -166,23 +161,18 @@ body {
   .images-parallax__background {
     background: url("../img/back.png") top/cover no-repeat;
   }
-
   .images-parallax__clouds1 {
     background: url("../img/1.png") 20% 20%/15% no-repeat;
   }
-
   .images-parallax__clouds2 {
     background: url("../img/3.png") 80% 25%/35% no-repeat;
   }
-
   .images-parallax__mountain-green {
     background: url("../img/mountain_green.png") 0% 79%/56% no-repeat;
   }
-
   .images-parallax__mountain-yellow {
     background: url("../img/mountain_yellow.png") 240% 78%/85% no-repeat;
   }
-
   .images-parallax__landscape {
     background: url("../img/2.png") 0% 89%/100% no-repeat;
   }
